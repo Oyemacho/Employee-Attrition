@@ -1,7 +1,5 @@
-# Employee-Attrition
-Creating a Machine learning model to predict Employee Attrition in a company Using Python and other machine learning algorithms
-
 # Employee Attrition Analysis - Company X
+Creating a Machine learning model to predict Employee Attrition in a company Using Python and other machine learning algorithms
 
 ## Introduction
 Employee attrition refers to the natural loss of employees through processes such as retirement, resignation, position elimination, personal health issues, or other similar reasons. This reduction in workforce size and strength can lead to increased job duties for the remaining employees, potentially resulting in lower productivity for the company.
@@ -26,8 +24,8 @@ The combined dataset includes a total of 14,999 samples, each with the same 10 a
 Data exploration and visualization are critical for understanding the factors leading to increased employee attrition rates. This approach is useful for answering the questions "Why are employees prone to leave the company?" and "What type of employees are leaving?"
 
 #### Steps:
-- Compare the existing and ex-employee datasets based on given attributes using charts.
-- Use Tableau to visualize, tell stories, and gain insights into the data based on the following attributes:
+- I compared the existing and ex-employee datasets based on given attributes using charts.
+- Used Tableau to visualize, tell stories, and gain insights into the data based on the following attributes:
   - `satisfaction_level`
   - `last_evaluation`
   - `number_project`
@@ -52,19 +50,19 @@ Data exploration and visualization are critical for understanding the factors le
 To predict which employees are prone to leave next, machine learning techniques were applied.
 
 #### Steps:
-1. Extract the 3,571 datasets of employees who have left and assign a target value of '1' to each row.
-2. Group the 11,428 samples of existing employees into three clusters based on satisfaction level and last evaluation using cluster analysis in Python:
+1. I extracted the 3,571 datasets of employees who have left and assign a target value of '1' to each row.
+2. Then grouped the 11,428 samples of existing employees into three clusters based on satisfaction level and last evaluation using cluster analysis in Python:
    - High Satisfaction and High Evaluation: Likely to stay.
    - High Satisfaction and Low Evaluation: Less likely to stay.
    - Low Satisfaction and Moderate Evaluation: Unlikely to stay.
-3. Extract the dataset of employees with high satisfaction and performance (1,584 samples) and assign a target value of '0' to each row.
-4. Concatenate the two dataframes (total of 5,155 employees) and clean the dataset.
-5. Train the new dataset using the K-Nearest Neighbors (KNN) algorithm, iterating K values from 1 to 50.
-6. Validate the model and fit the datasets of other existing employees into the built model.
+3. I continued to extract the dataset of employees with high satisfaction and performance (1,584 samples) and assign a target value of '0' to each row.
+4. I then concatenated the two dataframes (total of 5,155 employees) and clean the dataset.
+5. Continued to train the new dataset using the K-Nearest Neighbors (KNN) algorithm, iterating K values from 1 to 50.
+6. I validate the model and fit the datasets of other existing employees into the built model.
 7. The model predicts 3,569 employees who are prone to leave.
 
 ### Visualization
-Use Tableau to better visualize the predicted data and gain further insights.
+I used Tableau to better visualize the predicted data and gain further insights.
 
 ## Conclusion
 This project provides a comprehensive approach to understanding and predicting employee attrition at Company X. By leveraging data exploration, visualization, and machine learning, the company can take informed actions to reduce attrition and improve employee retention.
